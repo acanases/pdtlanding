@@ -25,6 +25,10 @@
   <meta name="twitter:description" content="Qué hacer cuando tu hijo explota. En segundos. Gratis." />
   <meta name="twitter:image" content="https://partedeti.com/imagenes/og-image.png" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="512x512" href="imagenes/favicon.png" />
+  <link rel="apple-touch-icon" href="imagenes/favicon.png" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,8 +91,15 @@
       border-bottom: 0.5px solid var(--border);
     }
 
-    .logo { display: flex; align-items: center; text-decoration: none; }
-    .logo img { height: 36px; width: auto; display: block; }
+    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .logo img { height: 32px; width: auto; display: block; }
+    .logo-text {
+      font-family: 'Caveat', cursive;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--salmon);
+      line-height: 1;
+    }
 
     .nav-cta {
       background: var(--salmon);
@@ -449,6 +460,7 @@
   <nav>
     <a href="/" class="logo" aria-label="Parte de Ti - Inicio">
       <img src="imagenes/logo.png" alt="Parte de Ti" />
+      <span class="logo-text">Parte de ti</span>
     </a>
     <a href="https://partedeti.vercel.app" class="nav-cta" rel="noopener">Probar gratis →</a>
   </nav>
